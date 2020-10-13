@@ -31,14 +31,14 @@ c<-makeCacheMatrix(b)
 ## the data and sets the inverse value in the cache via the setinversematrix function
 
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x) {
   a <- x$getinversematrix()
   if(!is.null(a)) {
     message("getting cached data")
     return(a)
   }
   data <- x$get()
-  a <- solve(data, ...)
+  a <- solve(data)
   x$setinversematrix(a)
   a
 }
