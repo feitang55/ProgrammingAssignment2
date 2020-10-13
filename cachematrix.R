@@ -24,10 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 b<-matrix(c(-7,4,9,6),2,2)
 c<-makeCacheMatrix(b)
 
-## the 2nd function calculates the inverse value of the matrix created by the 
-## 1st function.This function first checks if the inverse value of the matrix has 
-## already been calculated. If so, it gets the inverse value ans skips the computation.
-## If the inverse value has not been calculated, it will calculate the inverse value of 
+## the 2nd function calculates the inverse value of the matrix created by the 1st function.This function first checks if the inverse value of the matrix has 
+## already been calculated. If so, it gets the inverse value ans skips the computation.If the inverse value has not been calculated, it will calculate the inverse value of 
 ## the data and sets the inverse value in the cache via the setinversematrix function
 
 
