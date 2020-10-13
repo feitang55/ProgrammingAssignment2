@@ -20,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
    getinversematrix = getinversematrix)
 }
 
+##test with matrix
 b<-matrix(c(-7,4,9,6),2,2)
 c<-makeCacheMatrix(b)
 
@@ -41,4 +42,6 @@ cacheSolve <- function(x, ...) {
   x$setinversematrix(a)
   a
 }
+
+##test with cached matrix
 cacheSolve(c)
